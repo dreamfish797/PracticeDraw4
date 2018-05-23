@@ -13,6 +13,7 @@ import android.graphics.Point;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -68,6 +69,7 @@ public class Sample13CameraRotateHittingFaceView extends View {
 
     @SuppressWarnings("unused")
     public void setDegree(int degree) {
+        Log.d("cmy", "setDegree degree = " + degree);
         this.degree = degree;
         invalidate();
     }

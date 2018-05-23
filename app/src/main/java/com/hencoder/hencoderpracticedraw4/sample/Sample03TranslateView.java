@@ -15,8 +15,8 @@ import com.hencoder.hencoderpracticedraw4.R;
 public class Sample03TranslateView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     Bitmap bitmap;
-    Point point1 = new Point(200, 200);
-    Point point2 = new Point(600, 200);
+    Point point1 = new Point(100, 200);
+    Point point2 = new Point(400, 200);
 
     public Sample03TranslateView(Context context) {
         super(context);
@@ -39,12 +39,12 @@ public class Sample03TranslateView extends View {
         super.onDraw(canvas);
 
         canvas.save();
-        canvas.translate(-100, -100);
+        canvas.translate(-50, -50);
         canvas.drawBitmap(bitmap, point1.x, point1.y, paint);
         canvas.restore();
 
         canvas.save();
-        canvas.translate(200, 0);
+        canvas.translate(50, 0);
         canvas.drawBitmap(bitmap, point2.x, point2.y, paint);
         canvas.restore();
     }
